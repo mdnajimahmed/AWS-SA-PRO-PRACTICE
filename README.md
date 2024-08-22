@@ -1,0 +1,2 @@
+# AWS-SA-PRO-PRACTICE
+Practice notes for AWS SA PRO CERT
