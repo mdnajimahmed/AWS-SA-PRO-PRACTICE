@@ -1,0 +1,18 @@
+- without aws organization we will have per account iam user pool and payment methods.
+- Take a aws account which is not within an organization
+- Create a organization using it. Note: Organization is not created in this account, we are just using the account to create a organization. This is called management account / master account. This management account is special for two reasons
+ - asd 
+ - asd
+- We can invite other standard accounts(accounts that are not part of organization) , change from standard to member account.
+- We can create a hierarchical structure. Two types of Nodes, container and aws account. 
+    - Container type of node can contain other container or aws account
+    - Root is a container type of Node.
+    - Containers are typically Ooperational Unit(OU)
+- Consolidated billing is only enabled by aws organziations.
+- Payer account aka management account or master account
+- High volume usage brings more discount - another benefit of using organziation.
+- SCP
+- IAM users management changes, for example , a dedicated AWS account(member account) just for identity management or use identity federation.
+- Role Switch feature to swtich between accounts.
+- OrganizationAccountAccessRole: The management account assumes this role and perform administrative work to the member accounts, when we create a member account from management account it is created and setup automatically but when we invite to another AWS account to join our organziation, this role needs to be created manually.
+- Switch role is available for iam users only, not for root user.
